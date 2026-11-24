@@ -1,4 +1,4 @@
-# BLACK MESA  is the compatibility layer for GTA 6 combined with popular repo XCL and victory merged together, contribute if you can
+# AMBROSIA  is the compatibility layer for GTA 6 combined with popular repo XCL and victory merged together, contribute if you can
 
 Runs Grand Theft Auto VI (Xbox Series X|S) natively on Windows, from files
 the user supplies.
