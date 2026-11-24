@@ -10,6 +10,15 @@ the title, game binaries, saves, runtime data, or proprietary assets.
 
 Contributions, compatibility reports, and careful code review are welcome.
 
+## Legal, safety, and participation
+
+The project is distributed under [GPL-3.0-or-later](LICENSE). Read the
+[asset policy](docs/asset-policy.md), [contribution rules](CONTRIBUTING.md),
+[security policy](SECURITY.md), [code of conduct](CODE_OF_CONDUCT.md), and
+[independence and trademark notice](NOTICE.md) before participating. Ambrosia
+does not distribute or request proprietary game files, extracted assets, or
+access credentials.
+
 The title's x86-64 code runs unchanged inside our process; VIctory supplies
 the platform underneath it and converts the title's data, ahead of time where
 it can and on first use where it must (shaders). See
