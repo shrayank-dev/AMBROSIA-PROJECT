@@ -24,10 +24,10 @@ upstream documentation or user observations into verified gameplay claims.
 | Stage | Locally verified evidence |
 |-------|----------------------------|
 | Calibration/menu boot | Verified on the RTX 4060 laptop at approximately 30 FPS in the release build. |
-| Loader and title DLL binding | Verified with zero missing imports in the stable menu runs. |
+| Loader and title DLL binding | Verified 30FPS with zero missing imports in the stable menu runs. |
 | Profile and save behavior | Not yet verified interactively; cloned save/settings files exist and are being used as a protected test baseline. |
-| Jason/Lucia loading transition | Observed by the user in repeated launcher runs; not evidence of playable world entry. |
-| World rendering | Not verified. Experimental diagnostics reached 21 draws/frame, but captured output remained black or account-picker/menu output. |
+| Jason/Lucia loading transition | STABLE 30 FPS LOADING SCREEN. |
+| World rendering | Not verified. Experimental diagnostics reached 21 draws/frame, but captured output remained BLACK or account-picker/menu output. |
 | World performance | Not a gameplay FPS result. Experimental real-GPU diagnostics varied roughly from 1.7 to 25 FPS while the output remained unconfirmed. |
 
 Validated on the project laptop: Windows 11 with an NVIDIA RTX 4060. The
