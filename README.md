@@ -1,10 +1,11 @@
 # AMBROSIA PROJECT
 
 **Ambrosia is an experimental compatibility-layer research project for GTA VI,
-running a user-owned Xbox Series title on Windows.** It is Victory-based,
-includes project-authored code, and is informed by XCL compatibility research;
-it does not claim a literal code merge with XCL. The current menu/loading
-milestone was validated on a laptop with an NVIDIA RTX 4060.
+running a user-owned Xbox Series title on Windows.** Its compatibility-layer
+work is based on Victory, extended with project-authored code, and informed by
+XCL compatibility research. This repository does not claim a literal code
+merge with XCL. The current menu/loading milestone was validated on a laptop
+with an NVIDIA RTX 4060.
 
 This repository contains source and research notes only. It does not include
 the title, game binaries, saves, runtime data, or proprietary assets.
