@@ -1,4 +1,4 @@
-# Ambrosia Project
+# AMBROSIA PROJECT
 
 **Ambrosia is an experimental compatibility-layer research project for running
 a user-owned Xbox Series title on Windows.** It builds on Victory and draws on
