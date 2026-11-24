@@ -1,9 +1,10 @@
 # AMBROSIA PROJECT
 
-**Ambrosia is an experimental compatibility-layer research project for running
-a user-owned Xbox Series title on Windows.** It builds on Victory and draws on
-XCL-informed compatibility research, with the current menu/loading milestone
-validated on a laptop with an NVIDIA RTX 4060.
+**Ambrosia is an experimental compatibility-layer research project for GTA VI,
+running a user-owned Xbox Series title on Windows.** It is Victory-based,
+includes project-authored code, and is informed by XCL compatibility research;
+it does not claim a literal code merge with XCL. The current menu/loading
+milestone was validated on a laptop with an NVIDIA RTX 4060.
 
 This repository contains source and research notes only. It does not include
 the title, game binaries, saves, runtime data, or proprietary assets.
@@ -34,8 +35,8 @@ upstream documentation or user observations into verified gameplay claims.
 |-------|----------------------------|
 | Calibration/menu boot | Verified on the RTX 4060 laptop at approximately 30 FPS in the release build. |
 | Loader and title DLL binding | Verified with zero missing imports in the stable menu runs. |
-| Profile and save behavior | Not yet verified interactively; cloned save/settings files exist and are being used as a protected test baseline. |
-| Jason/Lucia loading transition | Observed by the user in repeated launcher runs; not evidence of playable world entry. |
+| Profile and save behavior | Menu/profile path has been observed at approximately 30 FPS; save persistence is not yet verified interactively. |
+| Jason/Lucia loading transition | User-observed loading screens at approximately 30 FPS; not evidence of playable world entry. |
 | World rendering | Not verified. Experimental diagnostics reached 21 draws/frame, but captured output remained black or account-picker/menu output. |
 | World performance | Not a gameplay FPS result. Experimental real-GPU diagnostics varied roughly from 1.7 to 25 FPS while the output remained unconfirmed. |
 
