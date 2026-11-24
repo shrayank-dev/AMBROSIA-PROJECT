@@ -15,18 +15,20 @@ the platform underneath it and converts the title's data, ahead of time where
 it can and on first use where it must (shaders). See
 [docs/architecture.md](docs/architecture.md).
 
-## Status (2026-11-25)
+## Local status (2026-11-25)
 
-**Not playable yet.** The title boots, runs its menus at its own 30 fps and
-loads the world, where rendering fails.
+**Not playable yet.** The following table reports only what this Ambrosia
+snapshot has actually reproduced on the project laptop; it does not convert
+upstream documentation or user observations into verified gameplay claims.
 
-| Stage | State |
-|-------|-------|
-| Boot, first-boot screens (accessibility, language, settings, legal) | works, 30 fps |
-| Intro video with sound | works |
-| Start screen, profile and saves | works |
-| Loading into the world (about 50 s) | works |
-| The world (first mission's intro) | reached and runs with indirect draws; its title card renders, the scene after it is still dark; 0.5-1.8 s per frame |
+| Stage | Locally verified evidence |
+|-------|----------------------------|
+| Calibration/menu boot | Verified on the RTX 4060 laptop at approximately 30 FPS in the release build. |
+| Loader and title DLL binding | Verified with zero missing imports in the stable menu runs. |
+| Profile and save behavior | Not yet verified interactively; cloned save/settings files exist and are being used as a protected test baseline. |
+| Jason/Lucia loading transition | Observed by the user in repeated launcher runs; not evidence of playable world entry. |
+| World rendering | Not verified. Experimental diagnostics reached 21 draws/frame, but captured output remained black or account-picker/menu output. |
+| World performance | Not a gameplay FPS result. Experimental real-GPU diagnostics varied roughly from 1.7 to 25 FPS while the output remained unconfirmed. |
 
 Validated on the project laptop: Windows 11 with an NVIDIA RTX 4060. The
 upstream Victory reference also documents testing on an AMD RX 6700 XT.
@@ -36,7 +38,8 @@ upstream Victory reference also documents testing on an AMD RX 6700 XT.
 > moment). To look further, use a diagnostics build with
 > `VICTORY_D3D12_WARP=1`, which renders on the software adapter.
 
-What each part does today and what it still needs:
+The following subsystem table is retained as upstream Victory reference
+documentation and has not been fully revalidated for the Ambrosia snapshot:
 
 | Subsystem | Today | Needs |
 |-----------|-------|-------|
