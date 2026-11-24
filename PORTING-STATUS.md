@@ -1,6 +1,8 @@
-# GTA VI Victory Porting Research
+# Ambrosia Project — Compatibility Research
 
-This repository records compatibility research and source changes for running the user-owned Xbox Series build through Victory on Windows. It is a research snapshot, not a redistribution of the game.
+Ambrosia records compatibility research and source changes for running a user-owned Xbox Series title through a Windows compatibility layer. The work combines the Victory codebase with XCL-informed investigation; it is not a redistribution of the game and does not claim that the two projects have been literally merged.
+
+The current menu/loading milestone was reproduced on the project laptop with an NVIDIA RTX 4060. Contributions and reproducibility reports are welcome.
 
 ## Current milestone
 

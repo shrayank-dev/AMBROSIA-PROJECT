@@ -1,14 +1,21 @@
-# AMBROSIA  is the compatibility layer for GTA 6 combined with popular repo XCL and victory merged together, contribute if you can
+# Ambrosia Project
 
-Runs Grand Theft Auto VI (Xbox Series X|S) natively on Windows, from files
-the user supplies.
+**Ambrosia is an experimental compatibility-layer research project for running
+a user-owned Xbox Series title on Windows.** It builds on Victory and draws on
+XCL-informed compatibility research, with the current menu/loading milestone
+validated on a laptop with an NVIDIA RTX 4060.
+
+This repository contains source and research notes only. It does not include
+the title, game binaries, saves, runtime data, or proprietary assets.
+
+Contributions, compatibility reports, and careful code review are welcome.
 
 The title's x86-64 code runs unchanged inside our process; VIctory supplies
 the platform underneath it and converts the title's data, ahead of time where
 it can and on first use where it must (shaders). See
 [docs/architecture.md](docs/architecture.md).
 
-## Status (2026-11-23)
+## Status (2026-11-25)
 
 **Not playable yet.** The title boots, runs its menus at its own 30 fps and
 loads the world, where rendering fails.
@@ -21,7 +28,8 @@ loads the world, where rendering fails.
 | Loading into the world (about 50 s) | works |
 | The world (first mission's intro) | reached and runs with indirect draws; its title card renders, the scene after it is still dark; 0.5-1.8 s per frame |
 
-Tested on one machine: Windows 11, RTX 4060 LAPTOP.
+Validated on the project laptop: Windows 11 with an NVIDIA RTX 4060. The
+upstream Victory reference also documents testing on an AMD RX 6700 XT.
 
 > **Warning.** Entering the world on a real GPU can currently hang it, and
 > Windows then resets the display driver (every monitor goes black for a
